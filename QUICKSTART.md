@@ -47,7 +47,7 @@ go run client/main.go
 
 **Решение:**
 1. Остановите процесс, использующий порт 8080
-2. Или измените порт: `make server PORT=3000`
+2. Или измените порт: `PORT=3000 make server` (Linux/Mac) или `$env:PORT="3000"; make server` (Windows PowerShell)
 
 ### Клиент не получает сообщения в реальном времени
 
