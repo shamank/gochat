@@ -8,12 +8,14 @@ import (
 )
 
 var (
-	serverURL = getServerURL()
-	wsURL     = getWebSocketURL()
+	serverURL string
+	wsURL     string
 )
 
 func init() {
 	_ = godotenv.Load()
+	serverURL = getServerURL()
+	wsURL = getWebSocketURL()
 }
 
 func getServerURL() string {
