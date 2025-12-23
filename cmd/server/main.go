@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/joho/godotenv"
 	"gochat/internal/delivery"
 	"gochat/internal/delivery/handler"
 	"gochat/internal/delivery/websocket"
@@ -14,6 +15,7 @@ import (
 )
 
 func main() {
+	_ = godotenv.Load()
 	userRepo := repository.NewInMemoryUserRepository()
 	roomRepo := repository.NewInMemoryRoomRepository()
 	messageRepo := repository.NewInMemoryMessageRepository()
