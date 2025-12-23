@@ -1,0 +1,8 @@
+*.md
+.git
+.gitignore
+*.test
+*.out
+client/
+cmd/
+
